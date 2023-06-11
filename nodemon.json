@@ -2,6 +2,6 @@
   "env": {
     "MONGO_USER": "kealen",
     "MONGO_PASSWORD": "p2Se8syopCVpXtab",
-    "MONGO_DB": "Portfolio"
+    "MONGO_DB": "portfolio"
   }
 }
