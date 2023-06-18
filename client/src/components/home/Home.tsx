@@ -5,21 +5,22 @@ import Typewriter from "typewriter-effect";
 const Home = () => {
   return (
     <>
-      <section className="display-flex justify-center items-center">
-        <div className="Roboto text-white font-bold">
-          <h1>Hi, my name is Kéalen Pillay</h1>
-          <h1>I am a</h1>
+      <section className="flex justify-center text-center items-center h-screen w-screen text-4xl">
+        <div className="flex flex-col Roboto text-white font-bold">
+          <h1>Hi, My Name Is</h1>
+          <div className="Roboto text-teal-500 font-bold">
+            <Typewriter
+              options={{
+                strings: ["Kéalen Pillay."],
+                autoStart: true,
+                loop: true,
+              }}
+            />
+          </div>
         </div>
-        <div className="Roboto text-teal-500 font-bold">
-          <Typewriter
-            options={{
-              strings: ["Software Engineer"],
-              autoStart: true,
-              loop: true,
-            }}
-          />
+        <div>
+          <ParticlesApp />
         </div>
-        <ParticlesApp />
       </section>
     </>
   );
