@@ -5,9 +5,10 @@ import Typewriter from "typewriter-effect";
 const Home = () => {
   return (
     <>
-      <section className="flex justify-center text-center items-center h-screen w-screen text-4xl">
-        <div className="flex flex-col Roboto text-white font-bold">
-          <h1>Hi, My Name Is</h1>
+      <section className="flex justify-center text-center items-center h-screen w-screen Roboto">
+        <div className="flex flex-col items-start text-white font-bold text-5xl">
+          <h1>Hi,</h1>
+          <h1> My Name Is</h1>
           <div className="Roboto text-teal-500 font-bold">
             <Typewriter
               options={{
@@ -17,9 +18,9 @@ const Home = () => {
               }}
             />
           </div>
-        </div>
-        <div>
-          <ParticlesApp />
+          <div>
+            <ParticlesApp />
+          </div>
         </div>
       </section>
     </>
