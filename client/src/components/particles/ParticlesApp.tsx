@@ -45,10 +45,14 @@ export const ParticlesApp = () => {
               quantity: 4,
             },
             repulse: {
-              distance: 200,
+              distance: 100,
               duration: 0.4,
             },
           },
+        },
+        fullScreen: {
+          enable: true,
+          zIndex: -1,
         },
         particles: {
           color: {
@@ -71,7 +75,7 @@ export const ParticlesApp = () => {
               default: "bounce",
             },
             random: false,
-            speed: 2,
+            speed: 1.5,
             straight: false,
           },
           number: {
