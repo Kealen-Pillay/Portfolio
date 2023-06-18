@@ -24,7 +24,7 @@ export const ParticlesApp = () => {
       options={{
         background: {
           color: {
-            value: "#FFFFFF",
+            value: "#1E1E1E",
           },
         },
         fpsLimit: 120,
