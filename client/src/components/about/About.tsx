@@ -35,6 +35,7 @@ const About = () => {
             href="https://www.linkedin.com/in/kealen-pillay-603306200/"
             target="_blank"
             rel="noreferrer"
+            className="cursor-pointer"
           >
             <LinkedInIcon sx={{ color: "#ffffff", marginRight: 2 }} />
           </a>
@@ -42,6 +43,7 @@ const About = () => {
             href="https://github.com/Kealen-Pillay"
             target="_blank"
             rel="noreferrer"
+            className="cursor-pointer"
           >
             <GitHubIcon sx={{ color: "#ffffff" }} />
           </a>
