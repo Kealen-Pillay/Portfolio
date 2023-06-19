@@ -14,7 +14,7 @@ const About = () => {
             alt="profile"
           />
         </div>
-        <div className="text-white font-bold px-5">
+        <div className="text-white px-5">
           <p className="mb-5">
             I am a software engineer, with experience working in fintech and
             agritech domains. I have previously interned at companies such as
