@@ -1,4 +1,5 @@
 import axios, { AxiosResponse } from "axios";
+import {APIDataType} from "../types/type";
 
 const baseUrl: string = "http://localhost:5000";
 

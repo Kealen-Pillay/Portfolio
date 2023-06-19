@@ -1,10 +1,8 @@
 interface IProject {
-  _id: string;
+  _id?: string;
   name: string;
   technologies: Array<string>;
   description: string;
-  createdAt?: string;
-  updatedAt?: string;
 }
 
 interface IProjectProps {
@@ -17,3 +15,5 @@ type APIDataType = {
   projects: IProject[];
   project?: IProject;
 };
+
+export {IProject, IProjectProps, APIDataType}

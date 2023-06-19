@@ -6,7 +6,7 @@ import Projects from "./components/projects/Projects";
 import Skills from "./components/skills/Skills";
 import Footer from "./components/footer/Footer";
 
-function App() {
+const App = () => {
     return (
         <>
             <Home/>
