@@ -3,6 +3,7 @@ import ProfilePic from "../../images/ProfilePic.png";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 
+// TODO: Add typewriter effect here
 const About = () => {
   return (
     <>
