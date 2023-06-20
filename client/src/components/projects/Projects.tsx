@@ -51,7 +51,11 @@ const Projects = () => {
                     <LayersIcon className="mr-2" />
                     <h3 className="mb-3 text-xs">
                       {projectList[index]?.technologies.map(
-                        (technology: string) => technology + ", "
+                        (technology: string, currentIndex) =>
+                          currentIndex !==
+                          projectList[index]?.technologies.length - 1
+                            ? technology + ", "
+                            : technology
                       )}
                     </h3>
                   </div>
