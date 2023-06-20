@@ -1,32 +1,31 @@
-import React, {useEffect, useState} from "react";
-import {getProjects} from "../../api/API";
-import {IProject} from "../../types/type";
-
-
+import React, { useEffect, useState } from "react";
+import { getProjects } from "../../api/API";
+import { IProject } from "../../types/type";
+import Carousel from "./Carousel";
 
 const Projects = () => {
-    const [projectList, setProjects] = useState<IProject[]>([]);
+  const [projectList, setProjects] = useState<IProject[]>([]);
 
-    useEffect(() => {
-            fetchProjects();
-        }
-        , []);
+  useEffect(() => {
+    fetchProjects();
+  }, []);
 
-    const fetchProjects = (): void => {
-        getProjects()
-            .then(({data: {projects}}: IProject[] | any) => setProjects(projects))
-            .catch((err: Error) => console.log(err));
-    };
+  const fetchProjects = (): void => {
+    getProjects()
+      .then(({ data: { projects } }: IProject[] | any) => setProjects(projects))
+      .catch((err: Error) => console.log(err));
+  };
 
-    return (
-        <>
-            <section className="flex h-screen w-screen Roboto bg-[#1e1e1e]">
-                <h1 className="text-white font-bold text-5xl mx-5 my-10">Projects</h1>
-                <div className="w-screen">
-                </div>
-            </section>
-        </>
-    );
+  return (
+    <>
+      <section className="flex flex-col h-screen w-screen Roboto bg-[#1e1e1e]">
+        <h1 className="text-white font-bold text-5xl mx-5 my-10">Projects</h1>
+        <div className="flex flex-row w-screen">
+          {projectList && <Carousel slides={projectList} />}
+        </div>
+      </section>
+    </>
+  );
 };
 
 export default Projects;
