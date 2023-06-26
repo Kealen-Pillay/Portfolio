@@ -64,15 +64,16 @@ const Projects = () => {
                   <h1 className="text-3xl font-bold mb-5">
                     {projectList[index]?.name}
                   </h1>
-                  {/* <img
-                    className="w-22 h-32 mb-5 border rounded"
-                    src={images[index][0]}
-                    alt="preview"
-                  /> */}
-                  <div className="bg-white w-72 h-40 mb-5 relative"></div>
+                  <div className="w-72 h-40 mb-5 border rounded">
+                    <img
+                      className="h-full"
+                      src={images[index][0]}
+                      alt="preview"
+                    />
+                  </div>
                   <div className="flex flex-row items-center w-72 h-12 mb-5">
                     <LayersIcon />
-                    <h3 className="ml-2 text-xs">
+                    <h3 className="ml-2 text-sm">
                       {projectList[index]?.technologies.map(
                         (technology: string, currentIndex) =>
                           currentIndex !==
