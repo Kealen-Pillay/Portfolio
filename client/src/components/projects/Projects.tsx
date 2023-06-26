@@ -47,7 +47,15 @@ const Projects = () => {
         <h1 className="text-white font-bold text-5xl mx-5 my-5">Projects</h1>
         <div className="flex items-start justify-center flex-row w-screen h-full">
           <div className="overflow-hidden relative">
-            <div className="flex  flex-col text-white w-screen  h-full pl-12 pr-6 py-5">
+            <div className="absolute inset-0 flex items-center justify-between h-screen">
+              <button onClick={prevSlide} className="rounded-full">
+                <ChevronLeftIcon sx={{ color: "#FFFFFF" }} fontSize="large" />
+              </button>
+              <button onClick={nextSlide} className="rounded-full">
+                <ChevronRightIcon sx={{ color: "#FFFFFF" }} fontSize="large" />
+              </button>
+            </div>
+            <div className="flex flex-col text-white w-screen  h-full pl-12 pr-6 py-5">
               {projectList && (
                 <div
                   className="transition-transform ease-out duration-500"
@@ -56,14 +64,15 @@ const Projects = () => {
                   <h1 className="text-3xl font-bold mb-5">
                     {projectList[index]?.name}
                   </h1>
-                  <img
-                    className="w-22 h-22 mb-5 border rounded"
+                  {/* <img
+                    className="w-22 h-32 mb-5 border rounded"
                     src={images[index][0]}
                     alt="preview"
-                  />
-                  <div className="flex flex-row">
-                    <LayersIcon className="mr-2" />
-                    <h3 className="mb-5 text-xs">
+                  /> */}
+                  <div className="bg-white w-72 h-40 mb-5 relative"></div>
+                  <div className="flex flex-row items-center w-72 h-12 mb-5">
+                    <LayersIcon />
+                    <h3 className="ml-2 text-xs">
                       {projectList[index]?.technologies.map(
                         (technology: string, currentIndex) =>
                           currentIndex !==
@@ -76,17 +85,6 @@ const Projects = () => {
                   <p>{projectList[index]?.description}</p>
                 </div>
               )}
-              <div className="absolute inset-0 flex items-center justify-between">
-                <button onClick={prevSlide} className="rounded-full">
-                  <ChevronLeftIcon sx={{ color: "#FFFFFF" }} fontSize="large" />
-                </button>
-                <button onClick={nextSlide} className="rounded-full">
-                  <ChevronRightIcon
-                    sx={{ color: "#FFFFFF" }}
-                    fontSize="large"
-                  />
-                </button>
-              </div>
             </div>
           </div>
         </div>
