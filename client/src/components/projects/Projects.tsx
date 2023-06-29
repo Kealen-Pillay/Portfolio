@@ -44,10 +44,12 @@ const Projects = () => {
   return (
     <>
       <section className="flex flex-col h-screen w-screen Roboto bg-[#1e1e1e]">
-        <h1 className="text-white font-bold text-5xl mx-5 my-5">Projects</h1>
-        <div className="flex items-start justify-center flex-row w-screen h-full">
+        <h1 className="text-white font-bold text-5xl mx-5 mt-10 mb-5">
+          Projects
+        </h1>
+        <div className="flex items-start justify-center flex-row w-screen h-full bg-teal-500">
           <div className="overflow-hidden relative">
-            <div className="absolute inset-0 flex items-center justify-between h-screen">
+            <div className="absolute inset-0 flex items-center justify-between h-screen pb-10">
               <button onClick={prevSlide} className="rounded-full">
                 <ChevronLeftIcon sx={{ color: "#FFFFFF" }} fontSize="large" />
               </button>
@@ -55,7 +57,7 @@ const Projects = () => {
                 <ChevronRightIcon sx={{ color: "#FFFFFF" }} fontSize="large" />
               </button>
             </div>
-            <div className="flex flex-col text-white w-screen  h-full pl-12 pr-6 py-5">
+            <div className="flex flex-col text-white w-screen h-full justify-center pl-6 pr-6 py-5  bg-rose-500">
               {projectList && (
                 <div
                   className="transition-transform ease-out duration-500"
@@ -64,12 +66,8 @@ const Projects = () => {
                   <h1 className="text-3xl font-bold mb-5">
                     {projectList[index]?.name}
                   </h1>
-                  <div className="w-72 h-40 mb-5 border rounded">
-                    <img
-                      className="h-full"
-                      src={images[index][0]}
-                      alt="preview"
-                    />
+                  <div className="hidden lg:block mb-5 border rounded overflow-hidden">
+                    <img src={images[index][0]} alt="preview" />
                   </div>
                   <div className="flex flex-row items-center w-72 h-12 mb-5">
                     <LayersIcon />
