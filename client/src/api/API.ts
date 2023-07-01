@@ -1,7 +1,7 @@
 import axios, { AxiosResponse } from "axios";
-import {APIDataType} from "../types/type";
+import { APIDataType } from "../types/type";
 
-const baseUrl: string = "http://localhost:5000";
+const baseUrl: string = "https://portfolio-backend-bice.vercel.app";
 
 export const getProjects = async (): Promise<AxiosResponse<APIDataType>> => {
   try {
