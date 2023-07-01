@@ -7,15 +7,15 @@ import Skills from "./components/skills/Skills";
 import Footer from "./components/footer/Footer";
 
 const App = () => {
-    return (
-        <>
-            <Home/>
-            <About/>
-            <Skills/>
-            <Projects/>
-            <Footer/>
-        </>
-    );
-}
+  return (
+    <>
+      <Home />
+      <About />
+      <Skills />
+      <Projects />
+      <Footer />
+    </>
+  );
+};
 
 export default App;
