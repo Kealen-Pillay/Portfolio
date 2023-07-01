@@ -44,7 +44,7 @@ const Projects = () => {
 
   return (
     <>
-      <section className="flex flex-col h-screen w-screen Roboto bg-[#1e1e1e] relative">
+      <section className="flex flex-col h-screen w-screen Roboto bg-[#1e1e1e] relative overflow-hidden">
         <div className="hidden end-px absolute w-1/3 h-auto lg:block rounded overflow-hidden">
           <img src={images[index][0]} alt="preview" />
         </div>

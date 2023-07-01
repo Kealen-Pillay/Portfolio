@@ -7,7 +7,7 @@ const Footer = () => {
 
   return (
     <>
-      <section className="flex flex-row h-10 w-screen bg-[#2e2e2e] items-center justify-between absolute z-20">
+      <section className="flex flex-row h-12 w-screen bg-[#2e2e2e] items-center justify-between absolute z-20">
         <div className="flex flex-row px-5">
           <a
             href="https://www.linkedin.com/in/kealen-pillay-603306200/"
